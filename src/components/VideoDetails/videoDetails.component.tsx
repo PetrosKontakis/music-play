@@ -14,6 +14,11 @@ type videoDetailsProps = {
  */
 const VideoDetails: React.FC<videoDetailsProps> = ({ video, onCloseCallBack }) => {
 
+    const opts = {
+        playerVars:{
+            origin: window.location.href
+        }
+    }
     const handleOnBackClick = () => {
         onCloseCallBack();
     }
@@ -33,6 +38,7 @@ const VideoDetails: React.FC<videoDetailsProps> = ({ video, onCloseCallBack }) =
                             className="embed-responsive-item "
                             videoId={video.videoId}
                             onStateChange={handleOnStateChange}
+                            opts={opts}
                         />
                     </div>
                 </div>
@@ -50,7 +56,7 @@ const VideoDetails: React.FC<videoDetailsProps> = ({ video, onCloseCallBack }) =
 
                     <p className="video-details-back">
                         <button className="inherit-button" onClick={handleOnBackClick}>
-                            <img src="/images/back_arrow.svg" alt="back to list" /> Back to list
+                            <img src="./images/back_arrow.svg" alt="back to list" /> Back to list
                         </button>
                     </p>
 

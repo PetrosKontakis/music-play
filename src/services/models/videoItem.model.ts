@@ -12,7 +12,7 @@ class VideoItem {
         this.videoPublishedAt = contentDetails.videoPublishedAt;
         this.title = snippet.title;
         this.description = snippet.description;
-        this.thumbDefaultUrl = "/images/default.jpg";
+        this.thumbDefaultUrl = "./images/default.jpg";
         if (snippet.thumbnails && snippet.thumbnails.medium && snippet.thumbnails.medium.url) {
             this.thumbDefaultUrl = snippet.thumbnails.medium.url;
         }

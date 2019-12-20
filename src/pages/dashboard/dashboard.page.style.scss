@@ -11,8 +11,7 @@
 
 .dashboard-page{
     @include transition();
-    background-color: black;
-    background-image: url(/images/main_bg.png);
+    background-color: #494848;
     background-size: cover;
     background-position: top left;
     position: absolute;

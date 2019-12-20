@@ -1,9 +1,6 @@
 @import "./styles/mixins";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&display=swap");
-@font-face {
-  font-family: "Alfa Slab One";
-  src: url(/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
 
 body {
   margin: 0;

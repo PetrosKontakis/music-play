@@ -33,7 +33,7 @@ const VideoListItemComponent: React.FC<VideoListItemProps> = ({ video, onClickCa
                         </div>
                         <div className="col-sm-3">
                             <button className="inherit-button play-button">
-                                <img src="/images/play_button.svg" alt="play video" />
+                                <img src="./images/play_button.svg" alt="play video" />
                             </button>
                         </div>
                     </div>
