@@ -1,0 +1,21 @@
+@import "../../styles/mixins";
+
+@keyframes loadAnimationHeader {
+  from {
+    background-position-x: -60px;
+  }
+  to {
+    background-position-x: 0px;
+  }
+}
+
+.header-component {
+  @include transition();
+  background-image: url(/images/header_bg.png);
+  background-position: 0 0;
+  height: 40px;
+  animation: loadAnimationHeader 1.3s normal forwards ease-in-out;
+  .navbar-brand {
+    margin-top: 4px;
+  }
+}

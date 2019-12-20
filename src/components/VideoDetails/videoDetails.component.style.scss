@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.video-details-component{
+    .video-details-title{
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 0.9em;
+    }
+    .video-details-description{
+        color: gray;
+        font-size: 0.8em;
+    }
+    .video-deatails-published{
+        color: white;
+        font-size: 0.9em;
+    }
+    .video-details-back{
+        color: $primary-color;
+        font-size: 0.8em;
+    }
+}

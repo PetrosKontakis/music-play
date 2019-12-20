@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.video-list-item {
+  @include transition();
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  .card-header-container {
+    position: relative;
+    .card-title {
+      font-family: $primary-font;
+      font-size: 0.9em;
+    }
+    .card-img-overlay {
+      color: $primary-color;
+      background: rgba(0, 0, 0, 0.3);
+      top: inherit;
+      padding: 8px;
+    }
+  }
+
+  .card-sub-title,
+  .card-text {
+    color: white;
+    font-size: 0.8em;
+  }
+  .card-text {
+    color: gray;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .play-button {
+    img {
+      max-width: 30px;
+    }
+  }
+}

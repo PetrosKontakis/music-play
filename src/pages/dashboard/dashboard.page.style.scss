@@ -1,0 +1,25 @@
+@import "../../styles/mixins";
+
+@keyframes loadAnimation {
+    from {
+        background-position-y: -1200px;
+    }
+    to {
+        background-position-y: 0px;        
+    }
+}
+
+.dashboard-page{
+    @include transition();
+    background-color: black;
+    background-image: url(/images/main_bg.png);
+    background-size: cover;
+    background-position: top left;
+    position: absolute;
+    float: left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: loadAnimation 1s normal forwards ease-in-out;
+}
